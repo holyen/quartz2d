@@ -23,6 +23,7 @@
 		BC2DC18316BBB7EF00E5E832 /* ZSLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2DC18016BBB7EF00E5E832 /* ZSLineView.m */; };
 		BC2DC18516BBBC6400E5E832 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2DC18416BBBC6400E5E832 /* QuartzCore.framework */; };
 		BC2DC18716BBBCCD00E5E832 /* avator.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2DC18616BBBCCD00E5E832 /* avator.png */; };
+		BC2DC18D16BBC28800E5E832 /* IVImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2DC18C16BBC28800E5E832 /* IVImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		BC2DC18016BBB7EF00E5E832 /* ZSLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSLineView.m; sourceTree = "<group>"; };
 		BC2DC18416BBBC6400E5E832 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BC2DC18616BBBCCD00E5E832 /* avator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator.png; sourceTree = "<group>"; };
+		BC2DC18B16BBC28800E5E832 /* IVImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVImageView.h; sourceTree = "<group>"; };
+		BC2DC18C16BBC28800E5E832 /* IVImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 		BC2DC15D16BBB78A00E5E832 /* quartz2d-demo */ = {
 			isa = PBXGroup;
 			children = (
+				BC2DC18B16BBC28800E5E832 /* IVImageView.h */,
+				BC2DC18C16BBC28800E5E832 /* IVImageView.m */,
 				BC2DC16616BBB78A00E5E832 /* AppDelegate.h */,
 				BC2DC16716BBB78A00E5E832 /* AppDelegate.m */,
 				BC2DC16F16BBB78B00E5E832 /* ViewController.h */,
@@ -210,6 +215,7 @@
 				BC2DC18116BBB7EF00E5E832 /* JMImageCache.m in Sources */,
 				BC2DC18216BBB7EF00E5E832 /* ZSImageView.m in Sources */,
 				BC2DC18316BBB7EF00E5E832 /* ZSLineView.m in Sources */,
+				BC2DC18D16BBC28800E5E832 /* IVImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
