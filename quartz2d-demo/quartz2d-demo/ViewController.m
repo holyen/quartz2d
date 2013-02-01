@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZSImageView.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    ZSImageView *imageView = [[[ZSImageView alloc] initWithFrame:CGRectMake(20, 20, 30, 30)] autorelease];
+	imageView.defaultImage = [UIImage imageNamed:@"avator.png"];
+	imageView.imageUrl = @"http://img1.pplive.cn/images/2013/01/11/16555860622.png";
+	imageView.contentMode = UIViewContentModeScaleAspectFill;
+	imageView.clipsToBounds = YES;
+	imageView.corners = ZSRoundCornerAll;
+	imageView.cornerRadius = 4;
+    
+	[self.view addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning

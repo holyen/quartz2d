@@ -18,6 +18,11 @@
 		BC2DC16E16BBB78B00E5E832 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2DC16D16BBB78B00E5E832 /* Default-568h@2x.png */; };
 		BC2DC17116BBB78B00E5E832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2DC17016BBB78B00E5E832 /* ViewController.m */; };
 		BC2DC17416BBB78B00E5E832 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2DC17216BBB78B00E5E832 /* ViewController.xib */; };
+		BC2DC18116BBB7EF00E5E832 /* JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2DC17C16BBB7EF00E5E832 /* JMImageCache.m */; };
+		BC2DC18216BBB7EF00E5E832 /* ZSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2DC17E16BBB7EF00E5E832 /* ZSImageView.m */; };
+		BC2DC18316BBB7EF00E5E832 /* ZSLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2DC18016BBB7EF00E5E832 /* ZSLineView.m */; };
+		BC2DC18516BBBC6400E5E832 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2DC18416BBBC6400E5E832 /* QuartzCore.framework */; };
+		BC2DC18716BBBCCD00E5E832 /* avator.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2DC18616BBBCCD00E5E832 /* avator.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,14 @@
 		BC2DC16F16BBB78B00E5E832 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BC2DC17016BBB78B00E5E832 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BC2DC17316BBB78B00E5E832 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		BC2DC17B16BBB7EF00E5E832 /* JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMImageCache.h; sourceTree = "<group>"; };
+		BC2DC17C16BBB7EF00E5E832 /* JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMImageCache.m; sourceTree = "<group>"; };
+		BC2DC17D16BBB7EF00E5E832 /* ZSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSImageView.h; sourceTree = "<group>"; };
+		BC2DC17E16BBB7EF00E5E832 /* ZSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSImageView.m; sourceTree = "<group>"; };
+		BC2DC17F16BBB7EF00E5E832 /* ZSLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSLineView.h; sourceTree = "<group>"; };
+		BC2DC18016BBB7EF00E5E832 /* ZSLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSLineView.m; sourceTree = "<group>"; };
+		BC2DC18416BBBC6400E5E832 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BC2DC18616BBBCCD00E5E832 /* avator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2DC18516BBBC6400E5E832 /* QuartzCore.framework in Frameworks */,
+				BC2DC15C16BBB78A00E5E832 /* CoreGraphics.framework in Frameworks */,
 				BC2DC15816BBB78A00E5E832 /* UIKit.framework in Frameworks */,
 				BC2DC15A16BBB78A00E5E832 /* Foundation.framework in Frameworks */,
-				BC2DC15C16BBB78A00E5E832 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,7 @@
 		BC2DC14816BBB78A00E5E832 = {
 			isa = PBXGroup;
 			children = (
+				BC2DC17A16BBB7E300E5E832 /* 3rdLibs */,
 				BC2DC15D16BBB78A00E5E832 /* quartz2d-demo */,
 				BC2DC15616BBB78A00E5E832 /* Frameworks */,
 				BC2DC15416BBB78A00E5E832 /* Products */,
@@ -73,6 +88,7 @@
 		BC2DC15616BBB78A00E5E832 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC2DC18416BBBC6400E5E832 /* QuartzCore.framework */,
 				BC2DC15716BBB78A00E5E832 /* UIKit.framework */,
 				BC2DC15916BBB78A00E5E832 /* Foundation.framework */,
 				BC2DC15B16BBB78A00E5E832 /* CoreGraphics.framework */,
@@ -96,6 +112,7 @@
 		BC2DC15E16BBB78A00E5E832 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC2DC18616BBBCCD00E5E832 /* avator.png */,
 				BC2DC15F16BBB78A00E5E832 /* quartz2d-demo-Info.plist */,
 				BC2DC16016BBB78A00E5E832 /* InfoPlist.strings */,
 				BC2DC16316BBB78A00E5E832 /* main.m */,
@@ -105,6 +122,19 @@
 				BC2DC16D16BBB78B00E5E832 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC2DC17A16BBB7E300E5E832 /* 3rdLibs */ = {
+			isa = PBXGroup;
+			children = (
+				BC2DC17B16BBB7EF00E5E832 /* JMImageCache.h */,
+				BC2DC17C16BBB7EF00E5E832 /* JMImageCache.m */,
+				BC2DC17D16BBB7EF00E5E832 /* ZSImageView.h */,
+				BC2DC17E16BBB7EF00E5E832 /* ZSImageView.m */,
+				BC2DC17F16BBB7EF00E5E832 /* ZSLineView.h */,
+				BC2DC18016BBB7EF00E5E832 /* ZSLineView.m */,
+			);
+			name = 3rdLibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +193,7 @@
 				BC2DC16C16BBB78B00E5E832 /* Default@2x.png in Resources */,
 				BC2DC16E16BBB78B00E5E832 /* Default-568h@2x.png in Resources */,
 				BC2DC17416BBB78B00E5E832 /* ViewController.xib in Resources */,
+				BC2DC18716BBBCCD00E5E832 /* avator.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +207,9 @@
 				BC2DC16416BBB78A00E5E832 /* main.m in Sources */,
 				BC2DC16816BBB78A00E5E832 /* AppDelegate.m in Sources */,
 				BC2DC17116BBB78B00E5E832 /* ViewController.m in Sources */,
+				BC2DC18116BBB7EF00E5E832 /* JMImageCache.m in Sources */,
+				BC2DC18216BBB7EF00E5E832 /* ZSImageView.m in Sources */,
+				BC2DC18316BBB7EF00E5E832 /* ZSLineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
